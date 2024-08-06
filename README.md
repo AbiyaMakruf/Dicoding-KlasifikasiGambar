@@ -80,3 +80,25 @@ Dari 10 kelas tomat dipilih kembali 4 kelas dengan distribusi masing-masing kela
 | 4  | Tomato_Yellow_Leaf_Curl_Virus  | Tomato_Yellow_Leaf_Curl_Virus  |
 
 # How To Inference
+Inference Menggunakan TensorFlow Serving.
+- Siapkan docker dekstop
+- Jalan command berikut pada terminal
+    ```
+    docker pull tensorflow/serving
+    ```
+- Install TensorFlow Serving Python API
+    ```
+    pip install tensorflow-serving-api
+    ```
+- Jalan command berikut pada terminal, ubah `YOUR_PATH`
+    ```
+    docker run -it -v YOUR_PATH\saved_model:/models -p 8501:8501 --entrypoint /bin/bash tensorflow/serving
+    ```
+- Jalan command berikut pada terminal
+    ```
+    tensorflow_model_server --rest_api_port=8501 --model_name=klasifikasi_model --model_base_path=/models/saved_model/
+    ```
+- Buka URL berikut pada browser untuk memastikan model berjalan
+    ```
+    http://localhost:8501/v1/models/klasifikasi_model
+    ```
