@@ -1,2 +1,2 @@
-# Dicoding-KlasifikasiGambar
-Proyek akhir dicoding course Belajar Pengembangan Machine Learning. Mendapatkan nilai ?/5.
+# Dataset
+- Dataset yang digunakan adalah https://github.com/spMohanty/PlantVillage-Dataset/tree/master

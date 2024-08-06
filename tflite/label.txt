@@ -1,0 +1,4 @@
+Late_blight
+Septoria_leaf_spot
+Tomato_Yellow_Leaf_Curl_Virus
+healthy
